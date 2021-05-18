@@ -3,118 +3,121 @@
     <head>
         <title>Online Shopping</title>
         <meta name="viewport" content="width=device-width">
-        <title>Souq.com</title>
+        <title>Contactinfo.com</title>
         <style>
+        body{
+          margin: 0;
+          background-size: 1550px 760px;
+          background:url('Info.jpg') no-repeat ;
+        }
         header {
-          background-color:#232732;
+          background-color: #232732;
           text-decoration:none;
           margin-bottom:0%;
           overflow: hidden;
         }
-        body{
-          margin: 0;
-          background:url('unknown.png') no-repeat ;
-          background-size: 1550px 760px;
-        }
-        .img {
-          margin-left: 0%;
-          display: inline;
-        }
-        img {
-          width: 100px;
-          height: 100px;
-        }
-        h1{
+
+        #m9{
           color:black;
           text-align: center;
           padding-right: 0%;
           background:white;
-          width: 300px;
-          margin-left: 7%;
-          margin-bottom: 0%;
-          margin-top: 5%;
+          width: 500px;
+          margin-left: 5%;
+          margin-bottom: 7%;
+          margin-top: 1%;
           border :6px solid #232732;
-          border-radius: 5px;
+          border-radius: 10px;
+          display: inline-block;
         }
       p{
           color:black;
-          text-align: center;
-          padding:20px;
-          background:white;
-          width:150px;
-          margin-left: 20%;
-          margin-bottom: 0%;
+          font-size: 20px;
+          width:300px;
+          margin-left: 0%;
           margin-top: 10%;
+          display: block;
+          font-weight: bold;
         }
 
-        #m9 button{
+         .button_1{
           background:#232732;
           padding-left: 20px;
           padding-right:20px;
           color:white;
           font-weight: bold;
-          margin-top: 8%;
-          display: block;
-          margin-left: 35%;
-          margin-bottom: 8%;
+          font-size: 20px;
+          margin-top: 3%;
+          display: inline;
+          margin-left: 80%;
+          margin-bottom: 0%;
+
         }
         #m9 input[type="email"]{
-          margin-left: 7%;
-          margin-top: 8%;
+          margin-left: 6%;
+          margin-top: 3%;
 
         }
         #m9 input[type="password"]{
-          margin-left: 0%;
-          margin-top: 8%;
+          margin-left: 2%;
+          margin-top: 3%;
         }
-      header a{
-          color:#ffffff;
-          text-decoration:none;
-          font-size:16px;
-        }
-      header .current a{
-         color:#7B07B1;
-         font-weight:bold;
-       }
-       li {
-         list-style: none;
-         display: block;
-       }
-       .list {
-         display:inline;
-         float: right;
 
-      }
-
-       header a:hover{
-         color:#072639;
-         font-weight:bold;
-       }
 div {
   margin-right:0%;
 }
 h2 {
   display: inline;
   font-size: 15px;
+  margin-left: 0%;
 }
+
 input[type="text"] {
-  margin-top: 8%;
+  margin-top: 3%;
 }
 #CO {
-  margin-top: 8%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 160px;
+  margin-left: 3%;
+}
+#disc {
+  font-size: 20px;
+  color: grey;
 }
 #header {
   background-color: #232732;
   height: 50px;
 }
+h7 {
+  font-size: 40px;
+  color: white;
+  margin-top: 5%;
+}
+#info {
+  margin-bottom: 2%;
+  margin-left: 5%;
+}
+footer {
+  background-color: #F5F5F5 ;
+  margin-bottom:0%;
+  height: 150px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+img {
+  width: 300px;
+  height: 150px;
+  display: inline;
+  margin-left: 60%;
+  margin-top: 0%;
+}
 h8 {
   color: #BFB367;
   margin-top: 10%;
   margin-bottom: 5%;
-}
-h7 {
-  font-size: 40px;
-  color: white;
 }
         </style>
     </head>
@@ -122,19 +125,21 @@ h7 {
 
     <body>
       <div id="header">
-        <h7 id="hhh">BlackJack</h7>
-        <h8>The Official online store </h8>
+       <h7 id="hhh">BlackJack</h7>
+       <h8>The Official online store </h8>
      </div>
-       <h1 id="m9">
+
+     <div id="info">
+
+     <p id="signup"> 1.Contact Information </p>
+     <span id="disc">This helps us always be able to reach you for any assistance you might need </span>
+   </div>
+       <div id="m9">
          <div id="m99">
-         <p id="signup"> Sign up </p>
+
        <div>
-         <h2> First Name </h2>
-         <input type="text" placeholder="Enter your first name">
-       </div>
-       <div>
-         <h2 > Last Name </h2>
-         <input type="text" placeholder="Enter your last name">
+         <h2> User Name </h2>
+         <input type="text" placeholder="Enter your User Name">
        </div>
        <div>
          <h2> E-mail </h2>
@@ -350,10 +355,12 @@ h7 {
               <option value="Zimbabwe">
           </datalist>
         </div>
-          <button type="submit" class="button_1">Sign up</button>
 
          </div>
-       </h1>
 
-      </body>
+       </div>
+      <footer>
+         <button type="submit" class="button_1"><a href="verify.html">Save And Continue</a></button>
+     </footer>
+   </body>
 </html>
