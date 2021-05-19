@@ -63,7 +63,7 @@ while(1){
     }
     cout<<endl;
     for (i = 0; i < nprocess; i++) {
-        cout<<"P"<<i+1<<" ";
+        cout<<"P"<<i<<" ";
         for (j = 0; j < mresources; j++)
         {
             cout<< need_mat[i][j]<<"  ";
@@ -79,7 +79,7 @@ while(1){
         finish_mat[k] = 0;
     }
 
-    for (k = 0; k < 5; k++) {
+    for (k = 0; k < nprocess; k++) {
         for (i = 0; i < nprocess; i++) {
             if (finish_mat[i] == 0) {
 
@@ -162,7 +162,7 @@ while(1){
     }
     cout<<endl;
     for (i = 0; i < nprocess; i++) {
-        cout<<"P"<<i+1<<" ";
+        cout<<"P"<<i<<" ";
         for (j = 0; j < mresources; j++)
         {
             cout<< need_mat[i][j]<<"  ";
@@ -172,7 +172,7 @@ while(1){
     }
 
     int y = 0;
-    for (k = 0; k < 5; k++) {
+    for (k = 0; k < nprocess; k++) {
         for (i = 0; i < nprocess; i++) {
             if (finish_mat[i] == 0) {
 
