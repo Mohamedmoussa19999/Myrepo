@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style >
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body id="bod">
+  <div id="eval">
+    <p id="text">CALCULATOR</p>
+    <div id="buttons">
+      <button id="one" onclick=Change1()></button>
+      <button id="two" onclick=Change2()></button>
+      <button id="three" onclick=Change3()></button>
+    </div>
+    <form id="calc" name="cal">
+      <input name="display" id="dis"> <br>
+      <div id="buttons2">
+      <input type="button" value="7" class="number" onclick="cal.display.value+='7'">
+      <input type="button" value="8" type="button" value="7" class="number" onclick="cal.display.value+='8'">
+      <input type="button" value="9" class="number" onclick="cal.display.value+='9'">
+      <input id="del" type="button" value="DEL" onclick=deleteletter()><br>
+      <input type="button" value="4" class="number" onclick="cal.display.value+='4'">
+      <input type="button" value="5" class="number" onclick="cal.display.value+='5'">
+      <input type="button" value="6" class="number" onclick="cal.display.value+='6'">
+      <input class="number" type="button" value="+" onclick="cal.display.value+='+'"><br>
+      <input class="number" type="button" value="1" onclick="cal.display.value+='1'">
+      <input class="number" type="button" value="2" onclick="cal.display.value+='2'">
+      <input class="number" type="button" value="3" onclick="cal.display.value+='3'">
+      <input class="number" type="button" value="-" onclick="cal.display.value+='-'"><br>
+      <input class="number" type="button" value="." onclick="cal.display.value+='.'">
+      <input type="button" value="0" class="number" onclick="cal.display.value+='0'">
+      <input class="number" type="button" value="/" onclick="cal.display.value+='/'">
+      <input class="number" type="button" value="*" onclick="cal.display.value+='*'"><br>
+      <input id="reset" type="button" value="Reset" onclick="cal.display.value=''">
+      <input id="eq" type="button" value="=" onclick="cal.display.value=eval(cal.display.value)">
+      </div>
+      
+    </form>
+  </div>
+  
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./app.js">
+
+  </script>
+</body>
+</html>

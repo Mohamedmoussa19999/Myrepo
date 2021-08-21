@@ -1,0 +1,72 @@
+#shopping {
+    text-decoration: none;
+    display: block;
+    color :black;
+    padding-bottom: 15px;
+}
+button {
+    display: inline-block;
+    color: blanchedalmond;
+    background-color: black;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    font-size: large;
+}
+#leftdiv {
+    background-image: url("desktop-image-hero-1.jpg");
+    height: 450px;
+    width: 800px;
+    background-size: 800px 450px;
+    background-repeat: no-repeat;
+    padding-top:0px ;
+    float: left;
+  }
+.head {
+    text-decoration: none;
+    color: white;
+    margin: 4%;
+    display: inline-block;
+}
+.head:hover {
+    border-bottom: 3px solid white;
+  }
+#rightdiv{
+    display: inline-block;
+    width: 600px;
+    padding-left: 50px;
+    margin-bottom: 14%;
+}
+h1 {
+    display: inline-block;
+}
+p {
+    display: inline-block;
+}
+body{
+    padding: 0px;
+}
+#right {
+    display: inline;
+    float: right;
+}
+#left {
+    display: inline;
+    float: left;
+}
+#mid {
+    width: 400px;
+    display: inline-block;
+    margin-left: 10%;
+    font-family: 'Courier New', Courier, monospace ;
+}
+#hmid {
+    width: 200px;
+    display:block;
+    font-family: 'Courier New', Courier, monospace ;
+    font-weight: bold;
+}
+#shopping {
+    text-decoration: none;
+    display: inline-block;
+}
